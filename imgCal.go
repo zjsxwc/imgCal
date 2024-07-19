@@ -139,10 +139,10 @@ func splitAndCalculateHistograms(img image.Image) {
 
 			// 计算相似性
 			similarity := correlation(fft1, fft2)
-			if ((similarity < 1.1) && (similarity > 0.98) ) {
+			if ((similarity < 1.12) && (similarity > 0.92) ) {
 				fmt.Printf("是花型")
 			} else {
-				fmt.Printf("不是花型 左右直方图数组 傅里叶变换比较 相似度大于1.1 或 小于0.98  相似性：%.2f", similarity)
+				fmt.Printf("不是花型 左右直方图数组 傅里叶变换比较 相似度大于1.12 或 小于0.92  相似性：%.2f", similarity)
 			}
 
 
